@@ -5,16 +5,30 @@ import About from "../components/About";
 import Highlights from "../components/Highlights";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import AnimatedWrapper from "../components/AnimatedWrapper";
 
 const Home = () => {
   return (
     <div className="font-sans text-[#333] bg-[#fdfdfd]">
       <AnnouncementBar />
       <Navbar />
-      <Hero />
-      <About />
-      <Highlights />
-      <Contact />
+
+      <AnimatedWrapper>
+        <Hero />
+      </AnimatedWrapper>
+
+      <AnimatedWrapper>
+        <About />
+      </AnimatedWrapper>
+
+      <AnimatedWrapper>
+        <Highlights />
+      </AnimatedWrapper>
+
+      <AnimatedWrapper>
+        <Contact />
+      </AnimatedWrapper>
+
       <Footer />
     </div>
   );

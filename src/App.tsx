@@ -3,18 +3,46 @@ import Home from "./pages/Home";
 import Groups from "./pages/Groups";
 import Activities from "./pages/Activities";
 import Faqs from "./pages/Faqs";
+import ScrollToTop from "./components/ScrollToTop";
+import AnimatedWrapper from "./components/AnimatedWrapper";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
-        <Route path="/dundalkpresbyterianchurch" element={<Home />} />
-        <Route path="/dundalkpresbyterianchurch/groups" element={<Groups />} />
+        <Route
+          path="/dundalkpresbyterianchurch/"
+          element={
+            <AnimatedWrapper>
+              <Home />
+            </AnimatedWrapper>
+          }
+        />
+        <Route
+          path="/dundalkpresbyterianchurch/groups"
+          element={
+            <AnimatedWrapper>
+              <Groups />
+            </AnimatedWrapper>
+          }
+        />
         <Route
           path="/dundalkpresbyterianchurch/activities"
-          element={<Activities />}
+          element={
+            <AnimatedWrapper>
+              <Activities />
+            </AnimatedWrapper>
+          }
         />
-        <Route path="/dundalkpresbyterianchurch/faqs" element={<Faqs />} />
+        <Route
+          path="/dundalkpresbyterianchurch/faqs"
+          element={
+            <AnimatedWrapper>
+              <Faqs />
+            </AnimatedWrapper>
+          }
+        />
       </Routes>
     </Router>
   );

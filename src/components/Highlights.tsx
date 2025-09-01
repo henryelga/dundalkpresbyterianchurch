@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const highlights = [
   {
     title: "Groups",
@@ -24,9 +26,9 @@ const Highlights = () => {
     <section className="bg-[#FFF9E6] py-12">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-6 text-center">
         {highlights.map((h, idx) => (
-          <a
+          <Link
             key={idx}
-            href={h.link}
+            to={h.link} // use 'to' instead of href
             className="bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-[#f0d799] hover:text-white flex flex-col items-center"
           >
             <div className="w-full aspect-square overflow-hidden rounded-t-xl">
@@ -42,7 +44,7 @@ const Highlights = () => {
               </h3>
               <p className="text-[#4B5563]">{h.desc}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
