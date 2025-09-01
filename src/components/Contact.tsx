@@ -1,4 +1,6 @@
 const Contact = () => {
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
   return (
     <section id="contact" className="max-w-6xl mx-auto px-6 py-12">
       <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
@@ -39,7 +41,7 @@ const Contact = () => {
             className="w-full h-full border-0"
             loading="lazy"
             allowFullScreen
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyB_JyaOyw4XCrvQHrXNzMDfLSV8qluZqQw&q=Dundalk%20Presbyterian%20Church&zoom=15`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Dundalk%20Presbyterian%20Church&zoom=15`}
           ></iframe>
         </div>
       </div>
