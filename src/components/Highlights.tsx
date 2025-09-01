@@ -2,19 +2,19 @@ const highlights = [
   {
     title: "Groups",
     desc: "Find a group to grow in faith and fellowship.",
-    link: "/groups",
+    link: "/dundalkpresbyterianchurch/groups",
     img: "/dundalkpresbyterianchurch/images/groups.jpg",
   },
   {
     title: "Activities",
     desc: "Stay updated on what's happening this month.",
-    link: "/activities",
+    link: "/dundalkpresbyterianchurch/activities",
     img: "/dundalkpresbyterianchurch/images/events.jpg",
   },
   {
     title: "FAQs",
     desc: "Get answers to common questions.",
-    link: "/faqs",
+    link: "/dundalkpresbyterianchurch/faqs",
     img: "/dundalkpresbyterianchurch/images/faqs.jpg",
   },
 ];

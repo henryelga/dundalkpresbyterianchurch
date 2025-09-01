@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 // Navbar links constant
 const NAV_LINKS = [
-  { name: "Home", path: "/" },
-  { name: "Groups", path: "/groups" },
-  { name: "Activities", path: "/activities" },
-  { name: "FAQs", path: "/faqs" },
+  { name: "Home", path: "/dundalkpresbyterianchurch" },
+  { name: "Groups", path: "/dundalkpresbyterianchurch/groups" },
+  { name: "Activities", path: "/dundalkpresbyterianchurch/activities" },
+  { name: "FAQs", path: "/dundalkpresbyterianchurch/faqs" },
 ];
 
 const FACEBOOK_URL = "https://www.facebook.com/dundalkpresbyterianchurch";
