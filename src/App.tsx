@@ -8,10 +8,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/groups" element={<Groups />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/dundalkpresbyterianchurch" element={<Home />} />
+        <Route path="/dundalkpresbyterianchurch/groups" element={<Groups />} />
+        <Route
+          path="/dundalkpresbyterianchurch/activities"
+          element={<Activities />}
+        />
+        <Route path="/dundalkpresbyterianchurch/faqs" element={<Faqs />} />
       </Routes>
     </Router>
   );

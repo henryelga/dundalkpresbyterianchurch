@@ -6,22 +6,22 @@ import Footer from "../components/Footer";
 const groups = [
   {
     title: "Sunday School for Kids",
-    image: "/images/sunday-school.jpg",
+    image: "/dundalkpresbyterianchurch/images/sunday-school.jpg",
     desc: "Held during the Sunday morning service for children aged 4-12.",
   },
   {
     title: "Women's Bible Study",
-    image: "/images/womens-bible-study.png",
+    image: "/dundalkpresbyterianchurch/images/womens-bible-study.png",
     desc: "A home group meeting every other Thursday, 7:30-9:00 PM.",
   },
   {
     title: "Church Bible Study",
-    image: "/images/church-bible-study.jpg",
+    image: "/dundalkpresbyterianchurch/images/church-bible-study.jpg",
     desc: "Meets in the church building every other Thursday, 7:30-9:00 PM.",
   },
   {
     title: "Bowls Group",
-    image: "/images/bowls.jpg",
+    image: "/dundalkpresbyterianchurch/images/bowls.jpg",
     desc: "Meets Wednesdays, 7:00-9:00 PM, and Fridays, 10:00 AM-12:00 PM. New people always welcome.",
   },
 ];
