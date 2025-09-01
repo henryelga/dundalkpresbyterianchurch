@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar";
 import AnnouncementBar from "../components/AnnouncementBar";
 import Footer from "../components/Footer";
+import AnimatedWrapper from "../components/AnimatedWrapper";
+import ScrollToTop from "../components/ScrollToTop";
 
 const groups = [
   {
@@ -29,6 +31,7 @@ const groups = [
 const Groups = () => {
   return (
     <div className="min-h-screen bg-[#FFF9E6]">
+      <ScrollToTop />
       {/* Top Bars */}
       <AnnouncementBar />
       <Navbar />
@@ -43,28 +46,30 @@ const Groups = () => {
       </section>
 
       {/* Groups Cards */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 flex flex-wrap justify-center gap-8">
-        {groups.map((g, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden w-full sm:w-[48%] lg:w-[30%] flex flex-col"
-          >
-            <div className="h-48 w-full overflow-hidden">
-              <img
-                src={g.image}
-                alt={g.title}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+      <AnimatedWrapper>
+        <section className="max-w-6xl mx-auto px-6 pb-16 flex flex-wrap justify-center gap-8">
+          {groups.map((g, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden w-full sm:w-[48%] lg:w-[30%] flex flex-col"
+            >
+              <div className="h-48 w-full overflow-hidden">
+                <img
+                  src={g.image}
+                  alt={g.title}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold text-[#2A5D84] mb-2">
+                  {g.title}
+                </h3>
+                <p className="text-[#4B5563] flex-grow">{g.desc}</p>
+              </div>
             </div>
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold text-[#2A5D84] mb-2">
-                {g.title}
-              </h3>
-              <p className="text-[#4B5563] flex-grow">{g.desc}</p>
-            </div>
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
+      </AnimatedWrapper>
 
       {/* Footer */}
       <Footer />

@@ -6,10 +6,12 @@ import Highlights from "../components/Highlights";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import AnimatedWrapper from "../components/AnimatedWrapper";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
     <div className="font-sans text-[#333] bg-[#fdfdfd]">
+      <ScrollToTop />
       <AnnouncementBar />
       <Navbar />
 

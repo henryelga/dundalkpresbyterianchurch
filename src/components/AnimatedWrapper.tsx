@@ -1,22 +1,21 @@
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useState } from "react";
 
-interface AnimatedWrapperProps {
-  children: ReactNode;
-  className?: string;
-}
+const AnimatedWrapper = ({ children }: { children: React.ReactNode }) => {
+  const [animate, setAnimate] = useState(false);
 
-const AnimatedWrapper = ({ children, className }: AnimatedWrapperProps) => {
+  useEffect(() => {
+    setTimeout(() => setAnimate(true), 50); // small delay
+    return () => setAnimate(false); // reset on unmount
+  }, []);
+
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+    <div
+      className={`transition-all duration-700 ease-out ${
+        animate ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
+      }`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 
