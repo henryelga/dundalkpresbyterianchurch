@@ -5,7 +5,7 @@ const Hero = () => {
       style={{
         backgroundImage: "url('/images/church.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center bottom",
       }}
     >
       <div className="absolute inset-0 bg-black opacity-40"></div>

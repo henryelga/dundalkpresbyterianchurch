@@ -2,20 +2,20 @@ const highlights = [
   {
     title: "Groups",
     desc: "Find a group to grow in faith and fellowship.",
-    link: "#groups",
+    link: "/groups",
     img: "/images/groups.jpg",
   },
   {
-    title: "Events",
-    desc: "Stay updated on what’s happening this month.",
-    link: "#events",
-    img: "/images/events.png",
+    title: "Activities",
+    desc: "Stay updated on what's happening this month.",
+    link: "/activities",
+    img: "/images/events.jpg",
   },
   {
     title: "FAQs",
     desc: "Get answers to common questions.",
-    link: "#faqs",
-    img: "/images/faqs.png",
+    link: "/faqs",
+    img: "/images/faqs.jpg",
   },
 ];
 
@@ -27,7 +27,7 @@ const Highlights = () => {
           <a
             key={idx}
             href={h.link}
-            className="bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-[#F0C14B] hover:text-white flex flex-col items-center"
+            className="bg-white rounded-xl shadow hover:shadow-lg transition hover:bg-[#f0d799] hover:text-white flex flex-col items-center"
           >
             <div className="w-full aspect-square overflow-hidden rounded-t-xl">
               <img
