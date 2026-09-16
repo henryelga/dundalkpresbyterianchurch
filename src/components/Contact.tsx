@@ -34,16 +34,15 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right column: full-size map with red pin */}
         <div className="md:w-1/2 w-full aspect-video md:aspect-auto rounded-xl overflow-hidden shadow">
           <iframe
             title="Church Location"
             className="w-full h-full border-0"
             loading="lazy"
-            allowFullScreen
-            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Dundalk%20Presbyterian%20Church&zoom=15`}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.8969530128384!2d-6.398130923709835!3d54.0046046252683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cea04c52871f%3A0xdd404a4a5ddadb59!2sDundalk%20Presbyterian%20Church!5e0!3m2!1sen!2sie!4v1789566615285!5m2!1sen!2sie"
           ></iframe>
         </div>
+        
       </div>
     </section>
   );
