@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { name: "FAQs", path: "/faqs" },
 ];
 
-const FACEBOOK_URL = "https://www.facebook.com/dundalkpresbyterianchurch";
+const FACEBOOK_URL = "https://www.facebook.com";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
