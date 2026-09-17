@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import AnimatedWrapper from "../components/AnimatedWrapper";
 import ScrollToTop from "../components/ScrollToTop";
+import SpecialService from "../components/SpecialService";
 
 const Home = () => {
   return (
@@ -21,6 +22,11 @@ const Home = () => {
 
       <AnimatedWrapper>
         <About />
+      </AnimatedWrapper>
+
+      {/* Special Service */}
+      <AnimatedWrapper>
+        <SpecialService />
       </AnimatedWrapper>
 
       <AnimatedWrapper>
